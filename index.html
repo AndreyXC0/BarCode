@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Stickers</title>
+</head>
+<body>
+  <header>
+    <!--Открыть файл-->
+    <div>
+      <input type="file" name="openfile" id="openfile" style="display: none;" accept=".xslx">
+      <button onclick="document.getElementById('openfile').click()">Выбрать файл</button>
+    </div>
+
+    <!--Добавить по баркоду-->
+    <div>
+      <input type="text" name="barcode" id="barcode" placeholder="Введите баркод">
+      <button>Добавить</button>
+    </div>
+
+    <!---->
+    <div>
+      <button>Отметить все все</button>
+      <button>Отменить отметки</button>
+    </div>
+
+    <!---->
+    <div>
+      <button>Печать</button>
+    </div>
+  
+    <!---->
+    <div>
+      <button>Настройки</button>
+    </div>
+  </header>
+
+  <hr>
+
+  <main>
+    <table>
+      <th>Выбран</th>
+      <th>Наименование</th>
+      <th>Штрихкод</th>
+      <th>Шаблон</th>
+      <th>Колличество</th>
+    </table>
+    <article style="display: flex;">
+      <input type="checkbox" name="" id="">
+      <p>Солнцезащитные очки</p>
+      <p>200238493477</p>
+      <p>wb | ozon</p>
+      <p>200</p>
+    </article>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
